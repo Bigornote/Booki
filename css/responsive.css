@@ -1,0 +1,242 @@
+/*
+Concernant les breakpoints, nous avons convenu avec le designer UI
+d’utiliser 992 px et 768 px.
+992 px pour les écrans d’ordinateurs et 768 px pour les tablettes, et
+tout ce qui est en dessous de 768 pour les téléphones portables.
+*/
+
+/* Large Desktop */
+@media screen and (min-width: 1615px) {
+    .hebergements .cardImageTop {
+        width: 31.5%;
+        height: 300px;
+    }
+    .hebergements .cardImageTop .imgContaint, 
+    .hebergements .cardImageTop .imgContaint img {
+        height: 214px ;
+    }
+}
+
+/* Desktop */
+@media screen and (max-width: 1439px) {
+    .hebergements {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .hebergements .tile:first-child,
+    .hebergements .tile:last-child {
+        width: 100%;
+    }
+    .hebergements .blockFirst, 
+    .hebergements .blockSecond {
+        gap: 2vw;
+    }
+    .hebergements .blockSecond {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1170px) and (max-width: 1439px) {
+    .hebergements .cardImageLeft {
+        width: 31.5%;
+    }
+}
+
+@media screen and (min-width: 957px) and (max-width: 1439px) {
+    
+    .hebergements .cardImageTop {
+        width: 31.5%;
+        height: 335px;
+    }
+    .hebergements .cardImageTop .imgContaint,
+    .hebergements .cardImageTop .imgContaint img {
+        height: 245px;
+    }
+
+}
+
+@media screen and (max-width: 1169px) {
+    .activites .block {
+        flex-wrap: wrap;
+    }
+    .activites .block .card-container:nth-child(odd){
+        width: 32%;
+    }
+    .activites .block .card-container:nth-child(even){
+        width: 65.7%;
+        flex-direction: row;
+        height: auto !important;
+    }
+    .activites .block,
+    .activites .block .card-container:nth-child(2n) {
+        gap: 2vw;
+    }
+    .activites .cardImageTop,
+    .activites .cardImageTop.cardSizeTwo,
+    .activites .cardImageTop.cardSizeThree,
+    .activites .cardImageTop.cardSizeFive,
+    .activites .cardImageTop.cardSizeSix {
+        height: 350px ;
+    }
+    .activites .cardImageTop .imgContaint,
+    .activites .cardImageTop.cardSizeTwo .imgContaint,
+    .activites .cardImageTop.cardSizeThree .imgContaint,
+    .activites .cardImageTop.cardSizeFive .imgContaint,
+    .activites .cardImageTop.cardSizeSix .imgContaint {
+        height: 300px ;
+    }
+    .activites .cardImageTop .imgContaint img,
+    .activites .cardImageTop.cardSizeTwo .imgContaint img,
+    .activites .cardImageTop.cardSizeThree .imgContaint img,
+    .activites .cardImageTop.cardSizeFive .imgContaint img,
+    .activites .cardImageTop.cardSizeSix .imgContain img {
+        top: 0;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 1169px) {
+    .hebergements .cardImageLeft {
+        width: 48.5%;
+    }
+}
+
+/* Tablette */
+@media screen and (max-width: 991px) {
+    .filter {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 956px) {
+    .hebergements .cardImageTop {
+        width: 48.5%;
+        height: 200px;
+    }
+    .hebergements .cardImageTop .imgContaint,
+    .hebergements .cardImageTop .imgContaint img{
+        height: 120px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    main {
+        margin: 0;
+    }
+    nav div.flexBetween {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 150px;
+    }
+    nav .logo {
+        padding-top: 20px;
+    }
+    nav .nav {
+        width: 100%;
+    }
+    nav .nav a::before {
+        top: 40px;
+    }
+    .hebergements .bgGrey:first-child  {
+        background-color: transparent;
+    }
+    .header, 
+    .header .container{
+        margin: 0;
+    }
+    .header .container {
+        padding: 2vw 4vw ;
+    }
+    .search-container {
+        margin: auto 0;
+    }
+    .hebergements .tile,
+    .activites,
+    .search-container {
+        padding: 4vw;
+    }
+    .hebergements .tile {
+        border-radius: 0;
+    }
+    .activites .block .card-container:nth-child(odd){
+        width: 31.5%;
+    }
+    footer {
+        gap: 4vw;
+    }
+    footer div {
+        width: 32.9%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .hebergements .cardImageLeft {
+        width: 100%;
+    }
+    .card.cardImageLeft .imgContaint {
+        width: 50%;
+    }
+    .activites .block .card-container:nth-child(even){
+        flex-direction: column;
+    }
+    .activites .block .card-container{
+        width: 100% !important;
+    }
+    .activites .block,
+    .activites .block .card-container:nth-child(2n) {
+        gap: 6vw;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer div {
+        width: 100%
+    }
+}
+@media screen and (max-width: 600px) {
+    .filter h3 {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .buttonDefault {
+        width: 100%;
+    }
+    .buttonDefault .buttonSearch .buttonIconSearch {
+        display: block;
+    } 
+    .buttonDefault .buttonSearch {
+        width: 55px;
+    }
+    .buttonDefault input {
+        width: 100%;
+    }
+    .buttonDefault .buttonSearch .buttonSearchText {
+        display: none;
+    } 
+    .hebergements .cardImageTop {
+        width: 100%;
+    }
+    .hebergements .blockFirst,
+    .hebergements .blockSecond{
+        gap: 6vw;
+    }
+    .card.cardImageLeft .imgContaint {
+        width: 40%;
+    }
+    .activites .cardImageTop {
+        height: 200px !important;
+    }
+    .activites .cardImageTop .imgContaint{
+        height: 150px !important;
+    }
+    .activites .cardImageTop .imgContaint img,
+    .activites .cardImageTop.cardSizeTwo .imgContaint img,
+    .activites .cardImageTop.cardSizeThree .imgContaint img,
+    .activites .cardImageTop.cardSizeFive .imgContaint img,
+    .activites .cardImageTop.cardSizeSix .imgContain img {
+        height: 150px;
+    }
+
+}
+
